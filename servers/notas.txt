@@ -1,0 +1,18 @@
+1 
+obtener la lista de servidores web de https://www.umich.mx/servers.html (2 columnas)
+guardar en wservers.txt
+
+2
+eliminar slash despues de .mx
+sed -i 's/\///' wservers.txt
+
+3
+eliminar www.umich.mx, ya esta considerado y es el padre de todos
+sed -i '/^umich.mx/d' wservers.txt
+
+4 
+corres el script s3.sh
+bash s3.sh
+
+
+
